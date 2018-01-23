@@ -55,7 +55,7 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+          <Component id="jPanel3" alignment="1" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -63,7 +63,7 @@
     <Container class="javax.swing.JPanel" name="jPanel3">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="99" green="99" red="99" type="rgb"/>
+          <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -75,25 +75,21 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jPanel1" max="32767" attributes="0"/>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="lblimg" min="-2" pref="202" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="jButton2" max="32767" attributes="0"/>
-                              <Component id="jButton3" alignment="1" max="32767" attributes="0"/>
-                              <Component id="jButton1" alignment="1" max="32767" attributes="0"/>
+                          <Component id="lblimg" min="-2" pref="231" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="btncheckout" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                              <Component id="btnremove" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnadd" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                              <Component id="btnn" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jScrollPane2" pref="268" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jScrollPane1" min="-2" pref="241" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -101,6 +97,11 @@
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -113,15 +114,18 @@
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="lblimg" pref="178" max="32767" attributes="0"/>
-                      <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                          <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblimg" alignment="1" pref="178" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="btnadd" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnremove" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btnn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="btncheckout" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="btnexit" min="-2" max="-2" attributes="0"/>
@@ -136,7 +140,10 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Campbells Store"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Grocery Store"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel1">
@@ -155,13 +162,13 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btndary" min="-2" pref="105" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
-                      <Component id="btngrain" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="170" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="btndariy" min="-2" pref="105" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                      <Component id="btnmeat" pref="119" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
                       <Component id="btnfruits" min="-2" pref="105" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -170,9 +177,9 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="23" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btndary" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btndariy" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="btnfruits" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="btngrain" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnmeat" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -180,21 +187,24 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JButton" name="btndary">
+            <Component class="javax.swing.JButton" name="btndariy">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Diary"/>
+                <Property name="text" type="java.lang.String" value="Dairy"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btndariyActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnfruits">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="1"/>
@@ -202,16 +212,19 @@
                 <Property name="text" type="java.lang.String" value="Fruits"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="btngrain">
+            <Component class="javax.swing.JButton" name="btnmeat">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Grain"/>
+                <Property name="text" type="java.lang.String" value="Meat"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnmeatActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -224,34 +237,10 @@
             </Property>
           </Properties>
         </Component>
-        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-          <AuxValues>
-            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-          </AuxValues>
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-          <SubComponents>
-            <Component class="javax.swing.JList" name="list">
-              <Properties>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder thickness="3"/>
-                  </Border>
-                </Property>
-                <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="0"/>
-                </Property>
-              </Properties>
-              <AuxValues>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-              </AuxValues>
-            </Component>
-          </SubComponents>
-        </Container>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="btnadd">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="1"/>
@@ -259,10 +248,10 @@
             <Property name="text" type="java.lang.String" value="Add to Cart"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="btnn">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="1"/>
@@ -270,10 +259,10 @@
             <Property name="text" type="java.lang.String" value="Nutrient Facts"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="btncheckout">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="1"/>
@@ -284,7 +273,7 @@
         <Component class="javax.swing.JButton" name="btnexit">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="12" style="1"/>
@@ -292,6 +281,37 @@
             <Property name="text" type="java.lang.String" value="Exit"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JButton" name="btnremove">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Remove from Cart"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTextArea" name="txtinfo">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder thickness="3"/>
+                  </Border>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>
