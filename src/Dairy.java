@@ -1,13 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author campb
- */
-public class Dairy {
-    
+import javax.swing.ImageIcon;
+
+public class Dairy extends AbsStore {
+
+    public Dairy() {
+        super();
+
+    }
+
+    public Dairy(String f, String n, int p, String c, ImageIcon i) {
+      super();
+
+    }
+
+    public String toString() {
+        String d = "Dairy Products\n======\n";
+        d += "\nMilk:  ";
+        d += "\nYogurt: ";
+        d += "\nCheese: ";
+        d += "\nButter: ";
+        return d;
+    }
+
 }

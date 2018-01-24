@@ -5,46 +5,50 @@ abstract public class AbsStore {
 
     protected String name;
     protected int price;
-    protected int buy;
-    protected int sell;
+    protected String catagory;
     protected String facts;
     protected ImageIcon image;
 
-    String d[] = {"Cheese", "Milk", "Yogurt", "Butter"};
-    String m[] = {"Fish", "Chicken", "Pork", "Beef"};
-    String f[] = {"Apple", "Banana", "Strawberry", "Grapes"};
-
     public AbsStore() {
+        price = 0;
+       
+    }
+
+    public AbsStore(String f, String n, int p, String c, ImageIcon i) {
+        facts = f;
+        name = n;
+        catagory = c;
+        price = p;
+        image = i;
 
     }
 
-    public AbsStore(boolean b, String n, int p, String c, ImageIcon i) {
-
+    final public int getPrice() {
+        return price;
     }
 
-    public String dairy() {
-        for (int i = 0; i < 3; i++) {
-            System.out.println(d[i]);
-        }
-        return null;
+    public String getName() {
+        return name;
     }
 
-    public String Meat() {
-        for (int i = 0; i < 3; i++) {
-            System.out.println(m[i]);
-        }
-        return null;
+    public String getCatagory() {
+        return catagory;
     }
 
-    public String Fruits() {
-        for (int i = 0; i < 3; i++) {
-            System.out.println(f[i]);
-        }
-        return null;
+    public String getFacts() {
+        return facts;
     }
 
     public ImageIcon getImage() {
         return image;
     }
+    
+        public String toString() {
+        String d = "Products\n======\n";
+        return d;
+    }
+
 
 }
+
+
